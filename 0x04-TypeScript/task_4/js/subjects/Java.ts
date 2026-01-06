@@ -5,7 +5,7 @@ namespace Subjects {
     }
 
     // Java class
-    export class Java {
+    export class Java extends Subject {
         teacher: Teacher;
 
         constructor(teacher: Teacher) {
