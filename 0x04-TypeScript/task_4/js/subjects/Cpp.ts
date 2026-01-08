@@ -1,5 +1,5 @@
 /// <reference path="Teacher.ts" />
-/// <reference path="Subject.ts" />
+import Subject from './Subject.js';
 namespace Subjects {
     export interface Teacher {
         experienceTeachingC?:number;
@@ -15,4 +15,4 @@ namespace Subjects {
         } else {
         return 'No available teacher';
         }
-    }
+    }}

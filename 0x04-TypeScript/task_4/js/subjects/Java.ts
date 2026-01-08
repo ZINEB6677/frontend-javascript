@@ -1,5 +1,7 @@
-namespace Subjects {
-    // إضافة experienceTeachingJava إلى Teacher interface
+/// <reference path="Teacher.ts" />
+import Subject from './Subject.js';
+
+namespace Subjects {   
     export interface Teacher {
         experienceTeachingJava?: number;
     }
@@ -9,6 +11,7 @@ namespace Subjects {
         teacher: Teacher;
 
         constructor(teacher: Teacher) {
+            super();
             this.teacher = teacher;
         }
 

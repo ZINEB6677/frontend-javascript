@@ -1,4 +1,5 @@
-/// <reference path="Teacher.ts" />
+import  Teacher  from './Teacher.js';
+
 namespace Subjects {
     export class Subject {
         teacher: Teacher;
