@@ -1,3 +1,4 @@
+import { cTeacher, react } from '../main.js';
 import Subject from './Subject.js';
 import type { Teacher } from './Teacher.js';
 
@@ -25,3 +26,7 @@ namespace Subjects {
     }
 }
 }
+console.log('React');
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());

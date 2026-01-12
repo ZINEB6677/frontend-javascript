@@ -17,13 +17,8 @@ namespace Subjects {
         }
     }}
 
-export const cTeacher: Teacher = {
-    firstName: "John",
-    lastName: "Doe",
-    experienceTeachingC: 10
-};
 
-console.log("C++");
+console.log('C++');
 cpp.setTeacher(cTeacher);
-console.log("Requirements: ...");
-console.log(`Available Teacher: ${cpp.getTeacher()?.firstName}`);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());

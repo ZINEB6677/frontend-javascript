@@ -1,4 +1,5 @@
-import Subject from './Subject.js';
+import { cTeacher } from '../main.js';
+import Subject, { java } from './Subject.js';
 
 namespace Subjects {   
     export interface Teacher {
@@ -29,8 +30,9 @@ namespace Subjects {
         }
     }
 }
-// For Java subject
-console.log("\nJava");
+
+
+console.log('Java');
 java.setTeacher(cTeacher);
-console.log("Requirements: ...");
-console.log(`Available Teacher: ${java.getTeacher()?.firstName}`);
+console.log(java.getRequirements());
+console.log(java.getAvailableTeacher());
