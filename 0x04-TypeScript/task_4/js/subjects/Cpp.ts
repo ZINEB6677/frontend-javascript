@@ -1,5 +1,5 @@
-/// <reference path="Teacher.ts" />
-import Subject from './Subject.js';
+import { Teacher } from './Teacher.js'
+import Subject, { cpp } from './Subject.js';
 namespace Subjects {
     export interface Teacher {
         experienceTeachingC?:number;
@@ -16,3 +16,14 @@ namespace Subjects {
         return 'No available teacher';
         }
     }}
+
+export const cTeacher: Teacher = {
+    firstName: "John",
+    lastName: "Doe",
+    experienceTeachingC: 10
+};
+
+console.log("C++");
+cpp.setTeacher(cTeacher);
+console.log("Requirements: ...");
+console.log(`Available Teacher: ${cpp.getTeacher()?.firstName}`);

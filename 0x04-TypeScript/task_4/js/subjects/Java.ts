@@ -1,4 +1,3 @@
-/// <reference path="Teacher.ts" />
 import Subject from './Subject.js';
 
 namespace Subjects {   
@@ -30,3 +29,8 @@ namespace Subjects {
         }
     }
 }
+// For Java subject
+console.log("\nJava");
+java.setTeacher(cTeacher);
+console.log("Requirements: ...");
+console.log(`Available Teacher: ${java.getTeacher()?.firstName}`);
