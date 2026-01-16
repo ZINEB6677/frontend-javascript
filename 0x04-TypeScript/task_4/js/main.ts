@@ -5,14 +5,16 @@
 
 import { Subjects } from "./subjects/Subject";
 
-export const cpp = new Subjects.Cpp();
-export const java = new Subjects.Java();
-export const react = new Subjects.React();
+namespace Subjects {
+export const cpp = new Cpp();
+export const java = new Java();
+export const react = new React();
 
 export const cTeacher: Subjects.Teacher = {
   firstName: 'John',
   lastName: 'Doe',
   experienceTeachingC: 10} 
+  } 
   // C++ subject
 console.log('C++');
 cpp.setTeacher(cTeacher);
