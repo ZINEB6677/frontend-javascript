@@ -2,9 +2,10 @@
 /// <reference path="./subjects/Cpp.ts" />
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
-
-import { Subjects } from "./subjects/Subject";
-
+import { Cpp } from './subjects/Cpp'; 
+import { Java } from './subjects/Java';
+import { React } from './subjects/React';
+import type { Teacher } from './subjects/Teacher.js';
 namespace Subjects {
 export const cpp = new Cpp();
 export const java = new Java();
