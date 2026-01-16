@@ -1,5 +1,5 @@
 /// <reference path="./Subject.ts" />
-
+/// <reference path="./Teacher.ts" />
 namespace Subjects {
   export class Cpp extends Subject {
     getRequirements(): string {
